@@ -1,0 +1,19 @@
+{
+  "registry_watch": [
+    {
+      "path": "HKCU:\\Software\\Microsoft\\Office\\16.0\\Outlook\\Security",
+      "keys": ["EnableUnsafeMacros", "DisableAllMacros"],
+      "expected_values": {"EnableUnsafeMacros": 0, "DisableAllMacros": 1}
+    },
+    {
+      "path": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "keys": ["OutlookMacroLoader", "OneDriveHook"],
+      "alert_on_presence": true
+    }
+  ],
+  "auditMeta": {
+    "castBy": "Vinvin",
+    "scrollchain": "Public-Matters",
+    "lastAudit": "2025-09-05T16:44:00+08:00"
+  }
+}
